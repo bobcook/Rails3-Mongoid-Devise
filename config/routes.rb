@@ -2,11 +2,7 @@ Rails3MongoidDevise::Application.routes.draw do
   root :to => "home#index"
   devise_for :users
   resources :users, :only => :show
-
-  root :to => "home#index"
-
-  devise_for :users
-
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
